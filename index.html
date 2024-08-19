@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Booksky</title>
+</head>
+<body>
+
+    <nav>
+        <h1>Booksky</h1>
+    </nav>
+
+    <div class="container">
+        <div class="book-container">
+            <h1>A Dance with Dragons</h1>
+            <h3>George R. R. Martin</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores animi tenetur ut temporibus, ullam perferendis reiciendis vel optio, quam sit assumenda atque ea soluta hic voluptates qui aliquam nihil.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+       
+    </div>
+    <div class="overlay">
+        <div class="popbox">
+            <h1>Add Book</h1>
+            <form action="">
+                <input type="text" placeholder="Book Title" id="book-title-input"><br>
+                <input type="text" placeholder="Book Author" id="book-author-input"><br>
+                <textarea type="text" placeholder="short description" id="book-description"></textarea>
+            </form>
+            <td>
+                <tr><button id="add-book">add</button></tr>
+                <tr><button id="cancel-popup">cancel</button></tr>
+            </td>
+        </div>
+       
+    </div>
+    <button class="popupbtn" id="popbtn">+</button>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
